@@ -3,32 +3,79 @@ import Layout from '../layouts/Layout.astro';
 
 const proyectos = [
 	{
-		titulo: "App de Tareas",
-		descripcion: "Aplicación móvil híbrida con Astro y Capacitor.",
-		imagen: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
-		tags: ["Astro", "Capacitor", "Mobile"],
+		titulo: "Dermalosophy Alviteclat – Web profesional para centro de estética",
+		descripcion: "Sitio web desarrollado para marca de estética con presentación de servicios, información de tratamientos y diseño enfocado en la experiencia del usuario. Optimizado para transmitir confianza y facilitar el contacto con clientes potenciales.",
+		imagen: "/proyectos/dermalosophy.webp",
+		tags: ["Astro", "TailwindCSS", "JavaScript", "Web Corporativa", "Responsive Design", "UI/UX"],
 		filtro: "astro",
-		enlace: "#",
-		repo: "#"
+		enlace: "https://www.dermalosophyalviteclat.com/",
+		repo: "https://github.com/joelhuzuliakdev/eclatEspa-a"
 	},
 	{
-		titulo: "Blog con Astro",
-		descripcion: "Blog ultrarrápido con MDX y Lighthouse 100.",
-		imagen: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=800&q=80",
-		tags: ["Astro", "MDX", "SEO"],
+		titulo: "Web profesional para estudio de arquitectura",
+		descripcion: "Landing page moderna optimizada para captar clientes. Incluye proyectos, servicios y formulario de contacto. Diseñada con Astro y Tailwind.",
+		imagen: "/proyectos/arquitectura.webp",
+		tags: [
+			"Astro",
+			"Tailwind",
+			"Responsive",
+			"Landing Page",
+			"SEO optimizado",
+			"Alta performance",
+			"WhatsApp integrado"
+		],
 		filtro: "astro",
-		enlace: "#",
-		repo: "#"
+		enlace: "https://demo-arquitectura-bay.vercel.app/",
+		repo: "https://github.com/joelhuzuliakdev/demoArquitectura"
 	},
 	{
-		titulo: "App Fitness",
-		descripcion: "Seguimiento de entrenamientos con planes personalizados.",
-		imagen: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
-		tags: ["React Native", "Firebase"],
-		filtro: "mobile",
-		enlace: "#",
-		repo: "#"
+		titulo: "Sistema de turnos para barbería",
+		descripcion: "Web profesional con sistema de reservas online y confirmación por WhatsApp.",
+		imagen: "/proyectos/barberia.webp",
+		tags: [
+			"Astro",
+			"Tailwind",
+			"Responsive",
+			"Sistema de turnos",
+			"WhatsApp integrado",
+			"SEO optimizado"
+		],
+		filtro: "astro",
+		enlace: "https://demo-barberia-eight.vercel.app/",
+		repo: "https://github.com/joelhuzuliakdev/demoBarberia"
 	},
+	{
+		titulo: "Sistema de pedidos online con Astro y WhatsApp",
+		descripcion: "Desarrollo de una aplicación web utilizando Astro y TailwindCSS que implementa filtrado de productos, gestión de carrito en el frontend y automatización de pedidos mediante integración con :contentReference[oaicite:0]{index=0}.",
+		imagen: "/proyectos/hamburgueseria.webp",
+		tags: [
+			"Astro", 
+			"TailwindCSS", 
+			"JavaScript", 
+			"Carrito de compras", 
+			"WhatsApp API", 
+			"UI/UX"
+		],
+		filtro: "astro",
+		enlace: "https://bennys-flax.vercel.app/",
+		repo: "https://github.com/joelhuzuliakdev/Bennys"
+	},
+	{
+		titulo: "Web empresarial para empresa de packaging",
+		descripcion: "Diseño y desarrollo de sitio web moderno para empresa del sector industrial, enfocado en mejorar la presencia digital, comunicar servicios de forma clara y generar nuevas oportunidades de contacto comercial.",
+		imagen: "/proyectos/somos_pack.webp",
+		tags: [
+			"Astro",
+			"TailwindCSS",
+			"Corporate Website",
+			"Business Website",
+			"Responsive Design",
+			"SEO Friendly"
+		],
+		filtro: "astro",
+		enlace: "https://somos-pack.vercel.app/",
+		repo: "https://github.com/joelhuzuliakdev/somosPack"
+	}
 ];
 
 const skills = [
@@ -167,11 +214,11 @@ const skills = [
 					<p class="sec-desc">Soluciones reales a problemas reales.</p>
 				</div>
 				<div class="filters reveal">
-					<button class="filter-btn active" data-f="all">todos</button>
+					<!--<button class="filter-btn active" data-f="all">todos</button>
 					<button class="filter-btn" data-f="react">react</button>
 					<button class="filter-btn" data-f="astro">astro</button>
-					<!--<button class="filter-btn" data-f="fullstack">fullstack</button> -->
-					<button class="filter-btn" data-f="mobile">mobile</button>
+					<button class="filter-btn" data-f="fullstack">fullstack</button> 
+					<button class="filter-btn" data-f="mobile">mobile</button> -->
 				</div>
 				<div class="proj-grid">
 					{proyectos.map((p, i) => (
